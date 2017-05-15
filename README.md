@@ -2,7 +2,7 @@
 
 [![build status](https://api.travis-ci.org/ecman/recuresolve.png)](https://travis-ci.org/ecman/recuresolve) [![codecov](https://codecov.io/gh/ecman/recuresolve/branch/master/graph/badge.svg)](https://codecov.io/gh/ecman/recuresolve) [![Code Climate](https://codeclimate.com/github/ecman/recuresolve/badges/gpa.svg)](https://codeclimate.com/github/ecman/recuresolve)
 
-Creates an asynchronous recursive function that returns a Promise.
+Create an asynchronous recursive function that returns a Promise.
 
 Intended for recursive functions that need to make asynchronous calls.
 
@@ -38,7 +38,8 @@ const recursiveAsyncAdderCaller = recuresolve(
         reject(err);
       } 
       else {
-        thisFn(thisFn, resolve, reject, nums, index + 1, newTotal);
+        thisFn(thisFn, resolve, reject, 
+          nums, index + 1, newTotal);
       }
     });
   }

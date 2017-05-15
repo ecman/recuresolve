@@ -1,7 +1,7 @@
 {
   "name": "recuresolve",
   "version": "1.0.0",
-  "description": "Creates a recursive function that can return a Promise",
+  "description": "Create a recursive function that can return a Promise",
   "main": "index.js",
   "scripts": {
     "test": "eslint index.js && istanbul cover test",
