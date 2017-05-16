@@ -39,10 +39,12 @@ const recursiveAsyncAdderCaller = recuresolve(
 recursiveAsyncAdderCaller([1, 2, 3, 4, 5])
   .then((sumTotal) => assert
     .strictEqual(sumTotal, 15, 
-      `sumTotal should be 15 not ${sumTotal}`));
+      `sumTotal should be 15 not ${sumTotal}`))
+  .catch((err) => assert
+    .fail(err, 15, `Got rejection: ${err.message}`))
       
 recursiveAsyncAdderCaller([1, 2, 3, 4, '5'])
   .then((sumTotal) => assert
     .fail(sumTotal, 0, 'Rejections should not resolve'))
   .catch((err) => assert
-    .ok());
+    .ok(err));
