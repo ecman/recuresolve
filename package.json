@@ -1,7 +1,7 @@
 {
   "name": "recuresolve",
-  "version": "1.0.4",
-  "description": "Create a recursive function that can return a Promise",
+  "version": "1.0.5",
+  "description": "Deprecated",
   "main": "index.js",
   "scripts": {
     "test": "eslint index.js && istanbul cover test",
@@ -13,14 +13,6 @@
     "url": "git+https://github.com/ecman/recuresolve.git"
   },
   "keywords": [
-    "recursive",
-    "promise",
-    "recursion",
-    "function",
-    "async",
-    "asynchronous",
-    "callback",
-    "ecman"
   ],
   "author": "ecman <its.ec@outlook.com>",
   "license": "MIT",
